@@ -1,0 +1,28 @@
+.toast {
+  min-width: 200px;
+  max-width: 90vw;
+  background: #31793d;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  font-size: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(40px) scale(0.98);
+}
+:host {
+  position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  z-index: 2000;
+  pointer-events: none;
+  display: block;
+}
+:host([open]) .toast {
+  opacity: 1;
+  pointer-events: auto;
+  transform: none;
+} 

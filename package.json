@@ -1,0 +1,35 @@
+{
+  "name": "lit-employee-management",
+  "version": "1.0.0",
+  "description": "Employee management system built with Lit Element and Vaadin Router",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "web-test-runner",
+    "postinstall": "npx playwright install --with-deps"
+  },
+  "dependencies": {
+    "@vaadin/router": "^1.7.5",
+    "i18next": "^23.7.0",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "lit": "^3.0.0"
+  },
+  "devDependencies": {
+    "@open-wc/testing": "^4.0.0",
+    "@web/test-runner": "^0.20.2",
+    "@web/test-runner-playwright": "^0.11.1",
+    "sinon": "^21.0.0",
+    "vite": "^5.0.0"
+  },
+  "keywords": [
+    "lit",
+    "vaadin-router",
+    "i18n",
+    "employee-management"
+  ],
+  "author": "gurhancifci",
+  "license": "MIT"
+}
