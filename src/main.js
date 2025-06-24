@@ -5,6 +5,7 @@ import './components/home-page/home-page.js';
 import './components/add-employee-page/add-employee-page.js';
 import './components/edit-employee-page/edit-employee-page.js';
 import './components/toast-message/toast-message.js';
+import './components/not-found-page/not-found-page.js';
 
 // Initialize i18n
 await i18n.init();
@@ -22,6 +23,10 @@ const routes = [
   {
     path: '/edit/:id',
     component: 'edit-employee-page'
+  },
+  {
+    path: '/(.*)',
+    component: 'not-found-page'
   }
 ];
 
