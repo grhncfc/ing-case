@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "web-test-runner",
-    "postinstall": "npx playwright install --with-deps"
+    "postinstall": "npx playwright install --with-deps",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@vaadin/router": "^1.7.5",
@@ -26,8 +27,7 @@
     "husky": "^9.0.0",
     "@commitlint/cli": "^18.0.0",
     "@commitlint/config-conventional": "^18.0.0",
-    "lint-staged": "^15.0.0",
-    "prepare": "husky install"
+    "lint-staged": "^15.0.0"
   },
   "keywords": [
     "lit",
