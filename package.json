@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "web-test-runner",
-    "postinstall": "npx playwright install --with-deps",
+    "postinstall": "npx playwright install",
     "prepare": "husky install"
   },
   "dependencies": {
